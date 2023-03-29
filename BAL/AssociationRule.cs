@@ -11,5 +11,6 @@ namespace BAL
         public string Label { get; set; }
         public double Confidance { get; set; }
         public double Support { get; set; }
+        public string Description { get; set; }
     }
 }

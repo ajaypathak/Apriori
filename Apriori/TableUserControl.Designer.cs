@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.ItemSetsDataGridView = new System.Windows.Forms.DataGridView();
             this.ItemSet = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Count = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,6 +38,7 @@
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Support = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RuleText = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.ItemSetsDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RulesDataGridView)).BeginInit();
             this.SuspendLayout();
@@ -56,21 +57,22 @@
             this.ItemSetsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ItemSet,
             this.Count});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ItemSetsDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ItemSetsDataGridView.DefaultCellStyle = dataGridViewCellStyle1;
             this.ItemSetsDataGridView.Location = new System.Drawing.Point(15, 36);
             this.ItemSetsDataGridView.Name = "ItemSetsDataGridView";
             this.ItemSetsDataGridView.ReadOnly = true;
             this.ItemSetsDataGridView.RowHeadersVisible = false;
             this.ItemSetsDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ItemSetsDataGridView.Size = new System.Drawing.Size(273, 161);
+            this.ItemSetsDataGridView.Size = new System.Drawing.Size(689, 395);
             this.ItemSetsDataGridView.TabIndex = 0;
+            this.ItemSetsDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ItemSetsDataGridView_CellContentClick);
             this.ItemSetsDataGridView.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
             // ItemSet
@@ -114,29 +116,31 @@
             this.RulesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
-            this.Support});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.RulesDataGridView.DefaultCellStyle = dataGridViewCellStyle4;
-            this.RulesDataGridView.Location = new System.Drawing.Point(15, 217);
+            this.Support,
+            this.RuleText});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.RulesDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            this.RulesDataGridView.Location = new System.Drawing.Point(15, 437);
             this.RulesDataGridView.Name = "RulesDataGridView";
             this.RulesDataGridView.ReadOnly = true;
             this.RulesDataGridView.RowHeadersVisible = false;
             this.RulesDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.RulesDataGridView.Size = new System.Drawing.Size(273, 161);
+            this.RulesDataGridView.Size = new System.Drawing.Size(689, 180);
             this.RulesDataGridView.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn1
             // 
-            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.dataGridViewTextBoxColumn1.HeaderText = "Rule";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 55;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -152,6 +156,12 @@
             this.Support.Name = "Support";
             this.Support.ReadOnly = true;
             // 
+            // RuleText
+            // 
+            this.RuleText.HeaderText = "Formula";
+            this.RuleText.Name = "RuleText";
+            this.RuleText.ReadOnly = true;
+            // 
             // TableUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -163,7 +173,7 @@
             this.Controls.Add(this.ItemSetsDataGridView);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "TableUserControl";
-            this.Size = new System.Drawing.Size(303, 392);
+            this.Size = new System.Drawing.Size(719, 626);
             ((System.ComponentModel.ISupportInitialize)(this.ItemSetsDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RulesDataGridView)).EndInit();
             this.ResumeLayout(false);
@@ -181,5 +191,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Support;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RuleText;
     }
 }

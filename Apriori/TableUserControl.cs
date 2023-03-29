@@ -32,7 +32,7 @@ namespace Apriori
             {
                 foreach (var item in rules)
                 {
-                    RulesDataGridView.Rows.Add(item.Label, item.Confidance.ToPercentString(), item.Support.ToPercentString());
+                    RulesDataGridView.Rows.Add(item.Label, item.Confidance.ToPercentString(), item.Support.ToPercentString(),item.Description);
                 }
             }
         }
@@ -54,6 +54,11 @@ namespace Apriori
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
             ItemSetsDataGridView.ClearSelection();
+        }
+
+        private void ItemSetsDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

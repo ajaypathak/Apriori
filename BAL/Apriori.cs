@@ -52,7 +52,7 @@ namespace BAL
                     if (found)
                         count++;
                 }
-                //if ((Candidates && count > 0) || IsFirstItemList || count >= support)
+                if ((Candidates && count > 0) || IsFirstItemList || count >= support)
                 {
                     itemSet.Add(item, count);
                     ItemSets.Add(itemSet);
@@ -120,12 +120,12 @@ namespace BAL
             }
             AssociationRule rule = new AssociationRule();
             StringBuilder sb = new StringBuilder();
-            sb.Append(set).Append(" => ");
+            sb.Append("{ "+set+" }").Append(" ==> ");
             List<string> list = new List<string>();
             foreach (var set2 in item.Key)
             {
                 if (setItems.Contains(set2)) continue;
-                list.Add(set2);
+                list.Add("{ "+set2+" }");
             }
             sb.Append(list.ToDisplay());
             rule.Label = sb.ToString();
@@ -141,6 +141,7 @@ namespace BAL
             }
             rule.Confidance = Math.Round(((double)item.Value / totalSet) * 100, 2);
             rule.Support = Math.Round(((double)item.Value / this.list.Count) * 100, 2);
+            rule.Description =  "c = "+item.Value + "/" + totalSet +"=" + rule.Confidance.ToString();
             return rule;
         }
     }

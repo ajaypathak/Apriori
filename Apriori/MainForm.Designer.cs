@@ -47,7 +47,7 @@
             this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(865, 384);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1343, 714);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // trackBar1
@@ -55,7 +55,7 @@
             this.trackBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.trackBar1.Enabled = false;
             this.trackBar1.LargeChange = 1;
-            this.trackBar1.Location = new System.Drawing.Point(596, 419);
+            this.trackBar1.Location = new System.Drawing.Point(1074, 749);
             this.trackBar1.Maximum = 9;
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Size = new System.Drawing.Size(281, 45);
@@ -68,7 +68,7 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(698, 403);
+            this.label1.Location = new System.Drawing.Point(1176, 733);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 13);
             this.label1.TabIndex = 3;
@@ -77,7 +77,7 @@
             // LoadFromFileButton
             // 
             this.LoadFromFileButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.LoadFromFileButton.Location = new System.Drawing.Point(12, 412);
+            this.LoadFromFileButton.Location = new System.Drawing.Point(12, 742);
             this.LoadFromFileButton.Name = "LoadFromFileButton";
             this.LoadFromFileButton.Size = new System.Drawing.Size(106, 23);
             this.LoadFromFileButton.TabIndex = 4;
@@ -89,7 +89,7 @@
             // 
             this.RefreshButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.RefreshButton.Enabled = false;
-            this.RefreshButton.Location = new System.Drawing.Point(12, 441);
+            this.RefreshButton.Location = new System.Drawing.Point(12, 771);
             this.RefreshButton.Name = "RefreshButton";
             this.RefreshButton.Size = new System.Drawing.Size(106, 23);
             this.RefreshButton.TabIndex = 5;
@@ -101,7 +101,7 @@
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox1.Image = global::Apriori.Properties.Resources.loader;
-            this.pictureBox1.Location = new System.Drawing.Point(124, 412);
+            this.pictureBox1.Location = new System.Drawing.Point(124, 742);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(52, 52);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -114,7 +114,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(889, 476);
+            this.ClientSize = new System.Drawing.Size(1367, 806);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.RefreshButton);
             this.Controls.Add(this.LoadFromFileButton);
