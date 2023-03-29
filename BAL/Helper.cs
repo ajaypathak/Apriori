@@ -26,7 +26,7 @@ namespace BAL
             List<string> dump = new List<string>();
             foreach (var item in list)
             {
-                if (item == exclude) continue;
+                //if (item == exclude) continue;
                 dump.Add(item.ToString());
             }
             return dump.ToDisplay();

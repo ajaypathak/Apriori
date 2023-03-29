@@ -52,7 +52,7 @@ namespace BAL
                     if (found)
                         count++;
                 }
-                if ((Candidates && count > 0) || IsFirstItemList || count >= support)
+               //if ((Candidates && count > 0) || IsFirstItemList || count >= support)
                 {
                     itemSet.Add(item, count);
                     ItemSets.Add(itemSet);
