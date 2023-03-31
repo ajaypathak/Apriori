@@ -1,0 +1,10 @@
+ItemSet:{ 4} 	 Values : 5
+ItemSet:{ 5} 	 Values : 4
+ItemSet:{ 1} 	 Values : 3
+ItemSet:{ 2} 	 Values : 3
+ItemSet:{ 6} 	 Values : 3
+ItemSet:{ 0} 	 Values : 2
+ItemSet:{ 3} 	 Values : 2
+ItemSet:{ 7} 	 Values : 1
+ItemSet:{ 8} 	 Values : 1
+ItemSet:{ 9} 	 Values : 1
